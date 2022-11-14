@@ -23,6 +23,7 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
 import { RegistroComponent } from './componentes/registro/registro.component';
 import { TableroComponent } from './componentes/tablero/tablero.component';
 import { ClienteService } from './servicios/cliente.service';
+import { LoginService } from './servicios/login.service';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,7 @@ import { ClienteService } from './servicios/cliente.service';
     FlashMessagesModule.forRoot(),
     ReactiveFormsModule
   ],
-  providers: [ClienteService],
+  providers: [ClienteService,LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -51,7 +51,7 @@ export class ClientesComponent implements OnInit {
     else{
       this.clienteService.agregarCliente(this.cliente);
       this.form.resetForm();
-      this.botonModal.nativeElement.click();
+      this.botonModal.nativeElement.click();//Cierra el modal para registrar cliente
     }
   
   }
